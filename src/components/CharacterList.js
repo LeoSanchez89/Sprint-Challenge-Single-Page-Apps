@@ -25,17 +25,23 @@ export default function CharacterList() {
   
 	return (
 		<section className="character-list">
-      <SearchForm characters={characters} setSearch={setSearch} search={search}/>
-			{characters.map(character => (
-				<CharacterCard
-					key={character.id}
-					name={character.name}
-					image={character.image}
-					species={character.species}
-					gender={character.gender}
-					status={character.status}
-				/>
-			))}
+			<SearchForm
+				characters={characters}
+				setSearch={setSearch}
+				search={search}
+			/>
+			<div>
+				{characters.map(character => (
+					<CharacterCard
+						key={character.id}
+						name={character.name}
+						image={character.image}
+						species={character.species}
+						gender={character.gender}
+						status={character.status}
+					/>
+				))}
+			</div>
 		</section>
 	);
 }

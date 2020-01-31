@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 
 export default function SearchForm(props) {
-  
-  const handleInputChange = event => {
+	const handleInputChange = event => {
 		props.setSearch(event.target.value);
-  };
-  
+	};
 
-
-  return (
+	return (
 		<section>
 			<form className="search">
 				<input
