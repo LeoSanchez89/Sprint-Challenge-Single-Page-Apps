@@ -5,6 +5,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 const StyledH2 = styled.h2`
 	font-size: 2rem;
 	color: #39ff14;
+	-webkit-text-stroke: 1px green;
 `;
 
 const CardBox = styled.div`
@@ -12,7 +13,8 @@ const CardBox = styled.div`
 `;
 
 const StyledP = styled.p`
-  font-size: 1.2rem;
+	font-size: 1.2rem;
+	-webkit-text-stroke: 1px green;
 `;
 
 export default function CharacterCard(props) {
