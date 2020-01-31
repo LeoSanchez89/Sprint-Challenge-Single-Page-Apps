@@ -14,6 +14,8 @@ const StyledLink = styled(Link)`
 	font-weight: bold;
 	font-size: 1.2rem;
   -webkit-text-stroke: 0.5px green;
+  margin-bottom:3%;
+  margin-top:3%;
    &:hover{
     color: red;
     text-decoration:none;

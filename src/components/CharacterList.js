@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import SearchForm from "./SearchForm";
+import styled from "styled-components";
+
+const CardContainer = styled.div`
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+`;
 
 export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
@@ -30,7 +37,7 @@ export default function CharacterList() {
 				setSearch={setSearch}
 				search={search}
 			/>
-			<div>
+			<CardContainer>
 				{characters.map(character => (
 					<CharacterCard
 						key={character.id}
@@ -41,7 +48,7 @@ export default function CharacterList() {
 						status={character.status}
 					/>
 				))}
-			</div>
+			</CardContainer>
 		</section>
 	);
 }

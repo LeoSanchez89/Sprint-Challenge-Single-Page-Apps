@@ -1,5 +1,12 @@
 import React from "react";
 import { InputGroup, Input } from "reactstrap";
+import styled from "styled-components";
+
+const StyledForm = styled.form`
+	width:60%;
+	margin-left: 20.5%;
+	margin-bottom:2%;
+`;
 
 export default function SearchForm(props) {
 	const handleInputChange = event => {
@@ -8,7 +15,7 @@ export default function SearchForm(props) {
 
 	return (
 		<section>
-			<form>
+			<StyledForm>
 				<InputGroup>
 					<Input
 						type="text"
@@ -19,7 +26,7 @@ export default function SearchForm(props) {
 						autoComplete="off"
 					/>
 				</InputGroup>
-			</form>
+			</StyledForm>
 		</section>
 	);
 }

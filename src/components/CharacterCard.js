@@ -9,7 +9,8 @@ const StyledH2 = styled.h2`
 `;
 
 const CardBox = styled.div`
-	width: 30%;
+  width: 35%;
+  margin:1%;
 `;
 
 const StyledP = styled.p`
