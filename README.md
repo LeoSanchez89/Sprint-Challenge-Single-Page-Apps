@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: The site only needs to load initially, but there is no refresh to go to other pages and no nerver requests when navigating  
 
 ## Project Set Up
 
