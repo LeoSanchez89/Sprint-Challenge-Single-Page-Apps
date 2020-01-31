@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { InputGroup, Input } from "reactstrap";
 
 export default function SearchForm(props) {
 	const handleInputChange = event => {
@@ -7,15 +8,17 @@ export default function SearchForm(props) {
 
 	return (
 		<section>
-			<form className="search">
-				<input
-					type="text"
-					onChange={handleInputChange}
-					value={props.search}
-					name="name"
-					placeholder="Character Search"
-					autoComplete="off"
-				/>
+			<form>
+				<InputGroup>
+					<Input
+						type="text"
+						onChange={handleInputChange}
+						value={props.search}
+						name="name"
+						placeholder="Character Search"
+						autoComplete="off"
+					/>
+				</InputGroup>
 			</form>
 		</section>
 	);
